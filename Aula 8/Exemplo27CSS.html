@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            border-top: solid darkgreen 5px;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+        }
+        .container{
+            display: flex;
+            min-height: 200px;
+            width: 80%;
+            margin: 20px auto;
+        }
+        .item{
+            background-color: lightcoral;
+            padding: 20px;
+            border: solid red 2px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: center;
+            font-size: 1.3em;
+            flex-basis: 100px;
+            flex-grow: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .item-1{
+            font-size: 1.6rem;
+        }
+        .item-2{
+            font-size: 1rem;
+        }
+        .item-3{
+            font-size: 2rem;
+        }
+        body{
+            margin:20px;
+        }
+        .flex-container{
+            display: flex;
+            background-color: skyblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+                  
+        .flex-container>div{
+            background-color: rgb(235,5,166);
+            color: white;
+            margin: 10px;
+            padding: 20px;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo 28 - FlexBox justify-content</h1>
+    <h2>justify-content flex start (padrão)</h2>
+    <div class="flex-container div1">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+    </div>
+    <h2>justify-content center</h2>
+    <div class="flex-container div2">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+    </div>
+    <h2>justify-content end</h2>
+    <div class="flex-container div3">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+    </div>
+    <h2>justify-content space between</h2>
+    <div class="flex-container div4">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+    </div>
+    <h2>justify-content space around</h2>
+    <div class="flex-container div5">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+    </div>
+    <h2>justify-content space space evenly</h2>
+    <div class="flex-container div6">
+         <div>1</div>
+         <div>2</div>
+         <div>3</div>
+    </div>
+</body>
+</html>

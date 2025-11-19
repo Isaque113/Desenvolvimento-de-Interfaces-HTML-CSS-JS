@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Funcionário</title>
+<style>
+    .painel{
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        font-weight: bold;
+    }
+    h5{
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="container-sm">
+    <div class="card mt-4 painel">
+        <div class="card-header bg-info text-white">
+            Funcionário
+        </div>
+        <div class="card-body">
+            <div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Novo Funcionário
+                </button>
+            </div>
+            <div>
+                <h5>Funcionários Cadastrados</h5>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">CPF</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Cargo</th>
+                            <th scope="col">Salário</th>
+                            <th scope="col">Data de adimissão</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>João</th>
+                            <td>123.456.791.01</td>
+                            <td>joao@gmail.com</td>
+                            <td>Func. padrão</td>
+                            <td>2000</td>
+                            <td>10/10/2020</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>João</th>
+                            <td>123.456.791.01</td>
+                            <td>joao@gmail.com</td>
+                            <td>Func. padrão</td>
+                            <td>2000</td>
+                            <td>10/10/2020</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>João</th>
+                            <td>123.456.791.01</td>
+                            <td>joao@gmail.com</td>
+                            <td>Func. padrão</td>
+                            <td>2000</td>
+                            <td>10/10/2020</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>João</th>
+                            <td>123.456.791.01</td>
+                            <td>joao@gmail.com</td>
+                            <td>Func. padrão</td>
+                            <td>2000</td>
+                            <td>10/10/2020</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>João</th>
+                            <td>123.456.791.01</td>
+                            <td>joao@gmail.com</td>
+                            <td>Func. padrão</td>
+                            <td>2000</td>
+                            <td>10/10/2020</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                    <label for="">Nome</label>
+                    <input type="text" name="" id="" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <label for="">CPF</label>
+                        <input type="text" name="" id="" class="form-control">
+                    </div>
+                    <div class="col-4">
+                        <label for="">Salário</label>
+                        <input type="number" name="" id="" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <label for="">Cargo</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Selecione</option>
+                            <option value="1">Func. padrão</option>
+                            <option value="2">Gerente</option>
+                            <option value="3">Sub-gerente</option>
+                        </select>
+                    </div>
+                    <div class="col-6">
+                        <label for="">Email</label>
+                        <input type="email" name="" id="" class="form-control">
+                    </div>
+                    <div class="col-3">
+                        <label for="">Data de adimissão</label>
+                        <input type="date" name="" id="" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

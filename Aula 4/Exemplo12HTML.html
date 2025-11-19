@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 12 - HTML</title>
+</head>
+<body>
+    <form action="PaginaDestino" method="get">
+        <div>
+            <label for="">CPF</label> <br>
+            <input type="text" name="txtCPFName" id="txtCPF"> <br>
+        </div>
+        <br>
+        <div>
+            <label for="">Data Nascmento</label> <br>
+            <input type="date" name="txtDataNascimentoName" id="txtDataNascimento"> <br>
+        </div>
+        <div>
+            <label for="">Estado Civil</label> <br>
+            <select name="cboEstadoCivil" id="cboEstadoCivil">
+                <option value="1">Casado</option>
+                <option value="2">Solteiro</option>
+                <option value="3">Divoriado</option>
+                <option value="4">Viuvo</option>
+                <option value="5">Outro</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="">Sexo</label>
+            <input type="radio" name="rdSexo" id="rdSexo" value="1">Masculino
+            <input type="radio" name="rdSexo" id="rdSexo" value="2">Feminino
+        </div>
+        <br>
+        <fieldset>
+            <legend>Dados cadastrados</legend>
+            <table>
+                <tr>
+                    <td>123.456.789-00</td>
+                    <td>Fernado Francisco de Assis Machadinho</td>
+                    <td>01/01/2000</td>
+                </tr>
+                <tr>
+                    <td>135.754.456-00</td>
+                    <td>Fernado Carlos de Assis Machadinho</td>
+                    <td>01/01/2001</td>
+                </tr>
+                <tr>
+                    <td>865.936.026-00</td>
+                    <td>Fernado Medeiros de Assis Machadinho</td>
+                    <td>01/01/2002</td>
+                </tr>
+                <tr>
+                    <td>123.456.789-00</td>
+                    <td>Fernado Fernando de Assis Machadinho</td>
+                    <td>01/01/2003</td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 8 HTML</title>
+</head>
+<body>
+    <h1>Exemplo 8 - Uso das Tags de Imagem e Vídeo</h1>
+    <p>
+        Este exemplo mostra diferentes formas de usar as tags <code>img</code> e <code>video</code>, incluindo o uso de <code>figure</code> e <code>figcaption</code> para agrupar mídias com legendas.
+    </p>
+
+    <h2>Descrição</h2>
+    <p>
+        As tags abordadas são:
+    </p>
+    <ul>
+        <li><strong>img</strong>: Usada para inserir imagens na página.</li>
+        <li><strong>video</strong>: Usada para inserir vídeos na página.</li>
+        <li><strong>figure</strong>: Usada para agrupar mídias (imagens, vídeos, gráficos) com uma legenda.</li>
+        <li><strong>figcaption</strong>: Usada para adicionar uma legenda ao conteúdo dentro de <code>figure</code>.</li>
+    </ul>
+    <h2>Exemplos Práticos</h2>
+    <h3>Imagem com legenda usando &lt;figure&gt; e &lt;figcaption&gt;</h3>
+    <figure>
+        <img src="lobo_rajado.jpg" alt="lobo rajado", width="600">
+        <figcaption>Imagem de um lobo rajado</figcaption>
+    </figure>
+    <h3>Video com legenda usando &lt;figure&gt;</h3>
+    <figure>
+        <figcaption>Exemplo de video</figcaption>
+        <video controls width="600">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </figure>
+    <h3>Incorporação de Vídeos do YouTube usando a tag &lt;iframe&gt;</h3>
+        <p>Abaixo usamos como exemplo dois vídos do YouTube, não esqueça de sempre verificar os direitos autorias antes de publicar imagens ou vídeos que não são seus.</p>
+    <h3>Eu navegarei</h3>
+    <figure>
+        <figcaption>
+            <iframe width="752" height="432" src="https://www.youtube.com/embed/LcYEtuTZGYk?list=RDLcYEtuTZGYk" title="Eu Navegarei | Cover" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </figcaption>
+    </figure>
+    
+</body>
+</html>

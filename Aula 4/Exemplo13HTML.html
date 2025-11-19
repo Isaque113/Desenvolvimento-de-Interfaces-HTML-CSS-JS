@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13 html</title>
+</head>
+<body>
+    <h1>Exemplo 13 HTML</h1>
+    <form action="paginaDestino.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="">CPF</label><br>
+                <input type="text" name="txtCPF" id="txtCPF"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Nome</label><br>
+                <input type="text" name="txtNome" id="txtNome" required autofocus><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Ano de Nascimento</label><br>
+                <input type="number" name="txtAnoNascimento" id="txtNascimento" min="2000" max="2025"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Email</label><br>
+                <input type="email" name="txtEmail" id="txtEmail"><br>
+            </div>
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div>
+                <label for="">Escolha um ou mais locais para a viagem</label> <br> 
+                <ul>
+                    <input type="checkbox" name="cbLocal" id="cbLocal" value="1">Praia <br>
+                    <input type="checkbox" name="cbLocal" id="cbLocal" value="2">Montanha <br>
+                    <input type="checkbox" name="cbLocal" id="cbLocal" value="3">Campo <br>
+                    <input type="checkbox" name="cbLocal" id="cbLocal" value="4">Fazenda <br>
+                    <input type="checkbox" name="cbLocal" id="cbLocal" value="5">Aquario <br>
+                    <input type="checkbox" name="cbLocal" id="cbLocal" value="6">Bem alí <br>
+                </ul>
+            </div>
+            <br>
+            <div>
+                <label for="">Esclha sua cor favorita</label>
+                <input type="color" name="txtCor" id="txtCor">
+            </div>
+            <br>
+            <div>
+                <label for="">Digite as suas preferências</label>
+                <input name="txtPreferencia" id="txtPreferencia" cols="30" cows="10" maxlength="255">
+            </div>
+        </fieldset>
+        <button type="summit">Cadastrar</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .navegation{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            list-style: none;
+            margin: 0;
+            background-color: black;
+        }
+        .navegation a{
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: gold;
+        }
+        .navegation a:hover{
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+        }
+        @media all and (max-width: 800px){
+            .navegation{
+                justify-content: space-around;
+            }
+        }
+        @media all and (max-width: 600px){
+            .navegation{
+                flex-flow: column-reverse;
+                padding: 0;
+            }
+            .navegation a{
+                text-align:  center;
+                padding: 10px;
+                border-top: solid rgba(213,160,26,0.6);
+                border-bottom: solid rgba(213,160,26,0.2);
+            }
+            .navegation li:last-of-type{
+                border-bottom: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul class="navegation">
+        <li><a href="http://">Inicio</a></li>
+        <li><a href="http://">Produto</a></li>
+        <li><a href="http://">Contato</a></li>
+        <li><a href="http://">Sobre</a></li>
+    </ul>
+</body>
+</html>
